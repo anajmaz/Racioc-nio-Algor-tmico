@@ -70,11 +70,11 @@ def add_item_menu():
             for item in restaurant["cardapio"]:
                 if item["nome"].lower() == item_name:
                     cart.append(item)
-                    print("Item adicionado ao cardapio")
+                    print("Item adicionado ao menu")
                     return
-            print("Item não encontrado")
+            print("Produto não encontrado")
             return
-    print("Restaurante não encontrado")
+    print("Este restaurante não está no nosso sistema, Verifique nosssa lista novamente")
 
 def remove_item_menu():
     restaurant_name = input("Digite o nome do restaurante: ").lower()
@@ -84,11 +84,11 @@ def remove_item_menu():
             for item in restaurant["cardapio"]:
                 if item["nome"].lower() == item_name:
                     cart.remove(item)
-                    print("Item removido com sucesso")
+                    print("Produto removido")
                     return
-            print("Item não encontrado")
+            print("Produto não encontrado")
             return
-    print("Restaurante não encontrado")
+    print("Este restaurante não está no nosso sistema, Verifique nosssa lista novamente")
 
 def search_item_menu():
     restaurant_name = input("Digite o nome do restaurante: ").lower()
@@ -97,11 +97,11 @@ def search_item_menu():
         if restaurant["nome"].lower() == restaurant_name:
             for item in restaurant["cardapio"]:
                 if item["nome"].lower() == item_name:
-                    print("Item encontrado")
+                    print("Produto encontrado")
                     return
-            print("Item não encontrado")
+            print("Produto não encontrado")
             return
-    print("Restaurante não encontrado")
+    print("Este restaurante não está no nosso sistema, Verifique nosssa lista novamente")
 
 def list_items_menu():
     for item in cart:
@@ -145,11 +145,11 @@ def add_item():
                 for item in restaurant["cardapio"][category]:
                     if item["nome"].lower() == item_name:
                         cart.append(item)
-                        print("Item adicionado ao carrinho")
+                        print("Foi adicionado ao carrinho")
                         return
-            print("Item não encontrado")
+            print("Não temos esse item no cardapio")
             return
-    print("Restaurante não encontrado")
+    print("Este restaurante não está no nosso sistema, Verifique nosssa lista novamente")
 
 def remove_item():
     for item in cart:
@@ -157,9 +157,9 @@ def remove_item():
         item_name = input("Digite o nome do item: ").lower()
         if item["nome"].lower() == item_name:
             cart.remove(item)
-            print("Item removido com sucesso")
+            print("Você retirou do " + item["nome"] + " do carrinho")
             return
-    print("Item não encontrado")
+    print("Este item não está no carrinho")
 
 def list_restaurants():
     for restaurant in restaurants:
@@ -186,7 +186,7 @@ def finish_order():
         
 while True:
     print('''
-      \nBem-vindo ao APP DE DELIVERY 🛒 🛒 🛒 🛒 ( Selecione uma opcao digite apenas o numero e nomes exatos )
+      \nBem-vindo ao APP DE DELIVERY 🛒 🛒 🛒 🛒 ( Selecione uma opcao digite apenas o numero )
       1 - colocar produto no carrinho
       2 - tirar produto do carrinho
       3 - buscar produtos no carrinho
