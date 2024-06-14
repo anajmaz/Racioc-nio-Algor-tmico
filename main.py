@@ -125,17 +125,13 @@ def add_item():
     for restaurant in restaurants:
         print(f'''
             Restaurante: {restaurant["nome"]}
-            Taxa do garçom: {restaurant["garcomTax"]}%
-        ''')
+            Taxa do garçom: {restaurant["garcomTax"]}%''')
         for category in restaurant["cardapio"]:
             print(f'''
-                Categoria: {category.capitalize()}
-            ''')
+                  Categoria: {category.capitalize()}''')
             for item in restaurant["cardapio"][category]:
                 item["valor"] += item["valor"] * restaurant["garcomTax"] / 100
-                print(f'''
-                    Nome: {item["nome"]} - Preço: R${item["valor"]:.2f}
-                ''')
+                print(f'''Nome: {item["nome"]} - Preço: R${item["valor"]:.2f}''')
 
     restaurant_name = input("Digite o nome do restaurante: ").lower()
     for restaurant in restaurants:
