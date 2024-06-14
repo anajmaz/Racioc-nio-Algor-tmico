@@ -1,0 +1,62 @@
+[
+    {
+        "nome": "Comidinhas",
+        "garcomTax": 5,
+        "cardapio": {
+            "principal": [
+                {
+                    "nome": "nhoque 4 queijos",
+                    "valor": 10
+                },
+                {
+                    "nome": "churrasco",
+                    "valor": 5
+                }
+            ],
+            "bebidas": [
+                {
+                    "nome": "Agua",
+                    "valor": 1.5
+                },
+                {
+                    "nome": "Agua T\u00f4nica",
+                    "valor": 2.5
+                },
+                {
+                    "nome": "Suco de Uva",
+                    "valor": 3.5
+                }
+            ],
+            "pratos": [
+                {
+                    "nome": "Batata",
+                    "valor": 10
+                },
+                {
+                    "nome": "Frango",
+                    "valor": 14.99
+                }
+            ],
+            "entradas": [
+                {
+                    "nome": "pao",
+                    "valor": 2.5
+                },
+                {
+                    "nome": "salgado",
+                    "valor": 2.99
+                }
+            ],
+            "sobremesas": [
+                {
+                    "nome": "sorvete de chocolate",
+                    "valor": 5
+                },
+                {
+                    "nome": "cookies",
+                    "valor": 4.99
+                }
+            ]
+        }
+    }
+]
