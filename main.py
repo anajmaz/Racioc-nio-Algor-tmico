@@ -1,6 +1,6 @@
 restaurants = [
     {
-        "nome": "kfc",
+        "nome": "Comidinhas",
         "garcomTax": 5,
         "cardapio": {
             "principal": [
